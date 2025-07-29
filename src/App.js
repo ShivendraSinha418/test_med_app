@@ -10,7 +10,7 @@ import Landing_Page from './Components/Landing_Page/Landing_Page';
 import Signup from './Components/Sign_Up/Sign_Up'; // Imported Signup component
 import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
-
+import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
 // Function component for the main App
 function App() {
 
@@ -33,6 +33,8 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           <Route path="/instant-consultation" element={<InstantConsultation />} />
+
+          <Route path="/finddoctor" element={<FindDoctorSearch />} />
         </Routes>
       </BrowserRouter>
     </>
