@@ -12,6 +12,7 @@ import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
 import BookingConsultation from './Components/BookingConsultation';
+import Notification from './Components/Notification/Notification';
 // Function component for the main App
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       {/* Set up BrowserRouter for routing */}
       <BrowserRouter>
         {/* Display the Navbar component */}
+        <Notification>
         <Navbar />
 
         {/* Set up the Routes for different pages */}
@@ -40,6 +42,8 @@ function App() {
           <Route path='/search/doctors' element={<BookingConsultation />} />
 
         </Routes>
+
+        </Notification>
       </BrowserRouter>
     </>
   );
