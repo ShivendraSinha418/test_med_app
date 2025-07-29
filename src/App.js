@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Import custom components
 import Navbar from './Components/Navbar/Navbar';
-import Landing_Page from './Components/Landing_Page/Landing_Page'; // Corrected import path
+import Landing_Page from './Components/Landing_Page/Landing_Page';
+import Signup from './Components/Sign_Up/Sign_Up'; // Imported Signup component
+import Login from './Components/Login/Login';
 
 // Function component for the main App
 function App() {
@@ -21,8 +23,13 @@ function App() {
 
         {/* Set up the Routes for different pages */}
         <Routes>
-          {/* Home route rendering Landing Page */}
+          {/* Home route */}
           <Route path="/" element={<Landing_Page />} />
+
+          {/* Signup route */}
+          <Route path="/signup" element={<Signup />} />
+
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
